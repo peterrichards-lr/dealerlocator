@@ -7,12 +7,17 @@ This is an example of how a React based Liferay portlet can be created. It uses 
 This module requires the headless API created for the Dealers entity (https://github.com/peterrichards-lr/dealers). All the required modules should
 be deployed to the Liferay instance before deploying the Dealer Locator. This has been tested with release 1.0.0 of the API.
 
-![Default](docs/withoutMarkerOrInfoWindowImages.png)
+### Default (no custom images)
 
-![Custom Marker](docs/customMarkerWithoutInfoWindowImage.png)
+![Default](docs/withoutMarkerOrInfoWindowImages.PNG)
 
-![Custom Marker & Info Window Logo](docs/customMarkerWithInfoWindowImage.png)
+### Custom Marker
 
+![Custom Marker](docs/customMarkerWithoutInfoWindowImage.PNG)
+
+### Custom Marker and Logo in Info Window
+
+![Custom Marker & Info Window Logo](docs/customMarkerWithInfoWindowImage.PNG)
 
 ## Configuration
 
@@ -26,4 +31,4 @@ be created with the same permissions as the parent folder.
 
 In order to make the headless API accessible a new Service Access Policy will most likely be needed. The following screenshot shows the configuration.
 
-![Service Access Policy](docs/serviceAccessPolicy.png)
+![Service Access Policy](docs/serviceAccessPolicy.PNG)
