@@ -4,7 +4,7 @@ import com.liferay.portal.kernel.settings.definition.ConfigurationBeanDeclaratio
 
 import org.osgi.service.component.annotations.Component;
 
-@Component
+@Component(immediate = true, service = ConfigurationBeanDeclaration.class)
 public class DealerLocatorPortletConfigurationBeanDeclaration implements ConfigurationBeanDeclaration {
 
 	@Override

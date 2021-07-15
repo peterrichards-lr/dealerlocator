@@ -7,9 +7,9 @@ import com.liferay.raybia.dealerlocator.DealerLocatorPortletConstants;
 import aQute.bnd.annotation.metatype.Meta;
 import aQute.bnd.annotation.metatype.Meta.Type;
 
-@ExtendedObjectClassDefinition(category = "raybia", scope = Scope.GROUP)
+@ExtendedObjectClassDefinition(category = "dealerlocator-category", scope = Scope.GROUP)
 
-@Meta.OCD(id = DealerLocatorPortletConstants.CONFIGURATION_PID, localization = "content/Language", name = "raybia-dealerlocator-portlet-configuration-name")
+@Meta.OCD(id = DealerLocatorPortletConstants.CONFIGURATION_PID, localization = "content/Language", name = "dealerlocator-configuration-name")
 public interface DealerLocatorPortletConfiguration {
 
 	@Meta.AD(required = false, name = "raybia-dealerlocator-portlet-googlemaps-key", type = Type.String, description = "raybia-dealerlocator-portlet-googlemaps-key-description", deflt = "")

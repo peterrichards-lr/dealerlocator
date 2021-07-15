@@ -1,8 +1,6 @@
 package com.liferay.raybia.dealerlocator.web.portlet;
 
 import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonParser;
 import com.liferay.frontend.js.loader.modules.extender.npm.NPMResolver;
 import com.liferay.portal.kernel.module.configuration.ConfigurationException;
 import com.liferay.portal.kernel.module.configuration.ConfigurationProvider;
@@ -28,13 +26,21 @@ import org.slf4j.LoggerFactory;
 /**
  * @author prich
  */
-@Component(immediate = true, configurationPid = DealerLocatorPortletConstants.CONFIGURATION_PID, property = {
-		"com.liferay.portlet.display-category=category.raybia", "com.liferay.portlet.header-portlet-css=/css/index.css",
-		"com.liferay.portlet.instanceable=true", "javax.portlet.init-param.template-path=/",
-		"javax.portlet.init-param.view-template=/view.jsp",
-		"javax.portlet.name=" + DealerLocatorPortletConstants.PORTLET_NAME,
-		"javax.portlet.resource-bundle=content.Language",
-		"javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
+@Component(
+		immediate = true,
+		property = {
+			"com.liferay.portlet.header-portlet-css=/css/index.css",
+			"com.liferay.portlet.instanceable=true",
+			"javax.portlet.display-name=Dealer Locator",
+			"javax.portlet.init-param.template-path=/",
+			"javax.portlet.init-param.view-template=/view.jsp",
+			"javax.portlet.name=" + DealerLocatorPortletConstants.PORTLET_NAME,
+			"javax.portlet.resource-bundle=content.Language",
+			"javax.portlet.security-role-ref=power-user,user",
+			"com.liferay.portlet.display-category=category.dealerlocator"
+		},
+		configurationPid = DealerLocatorPortletConstants.CONFIGURATION_PID,
+		service = Portlet.class)
 public class DealerLocatorPortlet extends MVCPortlet {
 
 	@Override
