@@ -31,4 +31,9 @@ be created with the same permissions as the parent folder.
 
 In order to make the headless API accessible a new Service Access Policy will most likely be needed. The following screenshot shows the configuration.
 
+Name : DEALER_AP_GUEST_ACCESS
+Title : Grant Guest Access to the Nearest Dealer operation of the Dealer API
+Service Class : com.liferay.raybia.headless.dealer.internal.resource.v1_0.NearestDealerResourceImpl
+Method Name : getNearestDealersPage
+
 ![Service Access Policy](docs/serviceAccessPolicy.PNG)
